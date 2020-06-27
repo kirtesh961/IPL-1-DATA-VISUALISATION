@@ -1,0 +1,30 @@
+html{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+div {
+    border: 3px solid transparent;
+    transition: border 0.5s linear;
+}
+
+div:hover {
+    border: 3px solid #ff9f43/*#ffb142*/;
+    background-color: #ff9f43;
+}
+
+h1 {
+    text-align: center;
+    color: #dfe6e9;
+    text-shadow: 5px 4px 8px #778ca3;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
