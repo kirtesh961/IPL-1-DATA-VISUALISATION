@@ -84,40 +84,7 @@ function visualizeMatchesWonByEachTeam(matchesWonByEachTeam){
     series: seriesData
   });
 }
-/*function  visualizeMatchesWonByEachTeam(matchesWonByEachTeam) {
-  
-  const seriesData = [];
-  for(let key in matchesWonByEachTeam){
-    let temp = [];
-    for(let team in matchesWonByEachTeam[key]){
-      temp.push([team,matchesWonByEachTeam[key][team]]);
-    }
-    // console.log("hello",temp)
-    seriesData.push({name:key,data:temp});
-  }
-   console.log("series data",seriesData)
-Highcharts.chart('matches-won-by-each', {
-  chart: {
-      type: 'column'
-  },
-  title: {
-      text: '2. Number of matches Won By Each Team Over All the Years of IPL'
-  },
-  subtitle: {
-      text: 'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
-  },
-  xAxis: {
-      categories:"category"
-  },
-  yAxis: {
-      min: 0,
-      title: {
-          text: 'Matches Won'
-      }
-  },
-  series: seriesData
-});
-}*/
+
 
 function visualizeExtraRunsConcededByEachTeam(extraRuns) {
   console.log(extraRuns)
