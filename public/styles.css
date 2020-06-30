@@ -8,17 +8,6 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 body {
     font-family: sans-serif;
 }
-/*
-div {
-    border: 3px solid transparent;
-    transition: border 0.5s linear;
-}
-
-div:hover {
-    border: 3px solid #ff9f43/*#ffb142*/;
-    /*background-color: #ff9f43;
-}
-*/
 h1 {
     text-align: center;
     color: #dfe6e9;
