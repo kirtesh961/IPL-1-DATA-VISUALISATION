@@ -12,6 +12,7 @@ function visualizeData(data) {
   visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
   visualizeEconomicalBowler(data.economicalBowlers);
   visualizeStory(data.story)
+  visualizeViratKohliRuns(data.viratKohliRuns)
   return;
 }
 
@@ -167,7 +168,7 @@ function visualizeEconomicalBowler(economic) {
 
 
 function visualizeStory(data) {
-  console.log(data);
+  // console.log(data);
   for(let i=0;i<data.length;i++){
     data[i][1]=parseInt(data[i][1]);
   }
@@ -196,6 +197,43 @@ function visualizeStory(data) {
     series: [
       {
         name: "Players",
+        data: seriesData
+      }
+    ]
+  });
+}
+
+
+function visualizeViratKohliRuns(data) {
+  console.log(data);
+  for(let i=0;i<data.length;i++){
+    data[i][1]=parseInt(data[i][1]);
+  }
+  const seriesData = data ;
+
+  Highcharts.chart("total-runs-by-vk", {
+    chart: {
+      type: "column"
+    },
+    title: {
+      text: "6. Total runs Hitted by Virat Kohli in each season of the IPL"
+    },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
+    xAxis: {
+      type: "category"
+    },
+    yAxis: {
+      // min: 0,
+      title: {
+        text: "Times Man Of the Match"
+      }
+    },
+    series: [
+      {
+        name: "runs",
         data: seriesData
       }
     ]

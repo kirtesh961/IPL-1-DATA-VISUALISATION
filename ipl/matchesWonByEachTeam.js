@@ -1,8 +1,8 @@
 function matchesWonByEachTeam(matches){
     const result = {};
     for (let match of matches) {
-      let winner = match[winner]
-      let season = match[season]
+      let winner = match['winner']
+      let season = match['season']
       if(result[ winner]){
         if(result[winner][season]){
           result[winner][season]+=1;
