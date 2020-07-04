@@ -4,9 +4,9 @@ function viratKohliRuns(matches,deliveries){
     for(let i of deliveries){
         if(i.batsman=='V Kohli'){
         if(total_run_by_match.hasOwnProperty(i.match_id)){
-            total_run_by_match[i.match_id]+=parseInt(i.total_runs);
+            total_run_by_match[i.match_id]+=parseInt(i.batsman_runs);
         }else{
-            total_run_by_match[i.match_id]=parseInt(i.total_runs);
+            total_run_by_match[i.match_id]=parseInt(i.batsman_runs);
         }
       }
     }

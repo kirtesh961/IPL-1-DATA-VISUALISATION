@@ -228,7 +228,7 @@ function visualizeViratKohliRuns(data) {
     yAxis: {
       // min: 0,
       title: {
-        text: "Times Man Of the Match"
+        text: "Runs"
       }
     },
     series: [
