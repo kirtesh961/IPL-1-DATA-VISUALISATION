@@ -233,7 +233,7 @@ function visualizeViratKohliRuns(data) {
     },
     series: [
       {
-        name: "runs",
+        name: "Years",
         data: seriesData
       }
     ]
